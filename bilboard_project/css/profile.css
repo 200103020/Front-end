@@ -1,0 +1,262 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:#FFF0DB ;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+    color: #000;
+}
+
+div, p, input, header, a, form {
+	box-sizing: border-box;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    background-color: #ed513a;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.sidebar_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav li {
+    margin-right: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav li a {
+    color: #fff;
+}
+
+.nav li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.sidebar_items {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.sidebar_items h2 {
+    margin-right: 70px;
+    color: #FFF;
+    width: 266px;
+}
+
+.sidebar_items h2 span {
+    color: yellow;
+}
+
+.shops {
+    display: flex;
+    align-items: center;
+}
+
+.shops a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+    font-weight: 100;
+}
+
+.cart a {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.profile {
+    background: #F4624B;
+    width: 180px;
+    padding: 8px 5px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.profile a:hover {
+    background: #ed513a;
+    transition: 0.7s ease;
+}
+
+
+.header {
+    padding: 70px 20px 20px 20px;
+}
+
+h1 {
+    font-style: 25px;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: #ed513a;
+}
+
+.personal_info_card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.personal_info_card img {
+    width: 40%;
+}
+
+.name_surname {
+    display: block;
+    margin: 0 auto;
+}
+
+.name {
+    display: flex;
+    font-size: 17px;
+}
+
+.surname {
+    display: flex;
+}
+
+ h3 {
+    font-size: 17px;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+p {
+    color: #F4624B;
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.phone_number p{
+    margin-bottom: 0;
+}
+
+.email {
+    display: flex;
+}
+
+.phone_number {
+    display: flex;
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.photo img {
+    margin-right: 30px;
+}
+
+.edit {
+    cursor: pointer;
+}
+
+.edit a {
+    display: block;
+    background-color: #ed513a;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.edit a:nth-child(2n){
+    display: block;
+    background-color: #fff;
+    margin-bottom: 0;
+    border: 2px solid #ed513a;
+    color: #000;
+}
+
+.user_id {
+    display: flex;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+
+.order_items table {
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.order_items thead {
+    color: #000;
+    border-radius: 8px;
+}
+
+/* thead {
+    background-color: #F4624B;
+} */
+
+tbody tr:nth-child(odd) {
+    background-color: #ededed;
+}
+
+.order_side h1 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 720px;
+}
+
+.header_items {
+    display: flex;
+}
+
+.gender {
+    display: flex;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/detailEditing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+</head>
+<body>
+    <section class="left_menu">
+        <div class="left_menu_items">
+            <h1>Happy Clients</h1>
+            <ul class="list">
+                <li class="dash">
+                    <a href="manager.html">Dashboard</a>
+                </li>
+                <li class="custom">
+                    <a href="#">Customers</a>
+                </li>
+                <li class="bilbo">
+                    <a href="allBilboards.html">All Bilboards</a>
+                </li>
+                <li class="new_bilbo">
+                    <a href="newBilbolboards.html">Post New Bilboard</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <header class="sidebar">
+        <div class="container">
+            <div class="sidebar_items">
+                <div class="enter">
+                    <img src="img/user.png" class="user-pic" onclick="toggleMenu()">
+                    <div class="name">
+                        <p>Cristi Ron</p>
+                        <p>Super Admin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="change">
+        <div class="container">
+            <div class="all_edit">
+                <div class="nav">
+                    <a href="#">All billboards ></a>
+                    <a href="#">Details & Editing</a>
+                </div>
+                <div class="edit_item">
+                    <div class="edit_img">
+                        <div class="first">
+                            <div class="first_img">
+                                <img src="img/detailImg1.png" alt="#">
+                                <figcaption> <button href="#">Change photo</button></figcaption>
+                            </div>
+                        </div>
+                        <div class="few_img">
+                            <!-- <div class="few_items">
+                                <img src="img/detailImg2.png" alt="">
+                                <img src="img/detailImg3.png" alt="">
+                            </div> -->
+                            <img src="img/detailMap.png" alt="" class="map">
+                        </div>
+                    </div>
+                    <div class="form_edit">
+                        <div class="form_each_line">
+                            <label for="Location">Location</label>
+                            <input type="text" value="Intersection of Abay-Sain streets">
+                        </div>
+                        <div class="form_each_line">
+                            <label for="City">City</label>
+                            <input type="text" value="Almaty">
+                        </div>
+                        <div class="form_each_line">
+                            <label for="Type">Type</label>
+                            <select id="type" name="type">
+                                <option value="au">One-sided</option>
+                                <option value="ca">Two-sided</option>
+                            </select>
+                        </div>
+                        <div class="form_each_line">
+                            <label for="Size">Size</label>
+                            <select id="size" name="size">
+                                <option value="au">5000x2900</option>
+                                <option value="ca">6000x2800</option>
+                            </select>
+                        </div>
+                        <div class="form_each_line">
+                            <label for="light">Lightning</label>
+                            <select id="light" name="light">
+                                <option value="au">Available</option>
+                                <option value="ca">No</option>
+                            </select>
+                        </div>
+                        <div class="form_each_line">
+                            <label for="Price">Price</label>
+                            <input type="text" value="500$">
+                        </div>
+                        <input type="submit" value="Save">
+                    </div>
+                    <div class="month">
+                        <h3>Selected & Free months</h3>
+                        <div class="free_selected">
+                            <div class="order_first">
+                                <button>1</button>
+                                <button>2</button>
+                                <button>3</button>
+                            </div>
+                            <div class="order_second">
+                                <button>4</button>
+                                <button>5</button>
+                                <button>6</button>
+                            </div>
+                            <div class="order_third">
+                                <button>7</button>
+                                <button>8</button>
+                                <button>9</button>
+                            </div>
+                            <div class="order_fourth">
+                                <button>10</button>
+                                <button>11</button>
+                                <button>12</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>t
+        </div>
+    </section>
+</body>
+</html>

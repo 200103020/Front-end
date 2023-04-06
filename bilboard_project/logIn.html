@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/logIn.css">
+    <title>Welcome to the Happy Clients</title>
+</head>
+<body>
+    <div class="logIn">
+        <div class="container">
+            <div class="logIn_items">
+                <div class="logIn_text">
+                    <h1><span>Happy</span> Clients!</h1>
+                    <P>Just enter your email and password. If you don't have an account, click "Register" below.</P>
+                    <div class="info">
+                        <input type="email" placeholder="Email" required= "required">
+                        <input type="password" placeholder="Password" minlength="8" required= "required">
+                    </div>
+                    <div class="btn">
+                        <button type="button">Enter</button>
+                    </div>
+
+                    <div class="wrong_password" id="wrong_password">
+                        <p>Sorry, your password was incorrect. Please double-check your password.</p>
+                    </div>
+                    <div class="register">
+                        <a href="register.html">Register now</a>
+                        <a href="forget.html">Forgot password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $('.btn').click( function(event){
+        event.preventDefault();
+        $('#wrong_password').fadeIn(297,	function(){
+          $('#wrong_password') 
+          .css('display', 'block')
+          .animate({opacity: 1}, 198);
+        });
+      });
+    
+      $('#myModal__close, #myOverlay').click( function(){
+        $('#myModal').animate({opacity: 0}, 198, function(){
+          $(this).css('display', 'none');
+          $('#myOverlay').fadeOut(297);
+        });
+      });
+    </script>
+</body>
+</html>
