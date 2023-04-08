@@ -34,32 +34,65 @@
             <div class="sidebar_items">
                 <div class="enter">
                     <img src="img/user.png" class="user-pic" onclick="toggleMenu()">
-                    <div class="name">
-                        <p>Cristi Ron</p>
-                        <p>Super Admin</p>
+                </div>
+                <div class="name">
+                    <p>Cristi Ron</p>
+                    <p>Super Admin</p>
+                </div>
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="uer-info">
+                            <img src="img/user.png" class="img2">
+                            <h3>Kozhan Nursylam</h3>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-user"></i>
+                            <p>My profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <p>Edit profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Log out</p>
+                            <span>></span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="change">
+    <section class="photos">
         <div class="container">
             <div class="all_edit">
                 <div class="edit_item">
                     <div class="edit_img">
                         <div class="first">
-                            <div class="first_img">
-                                <img src="img/new.png" alt="#">
-                                <button type="button">Change photo</button>
+                            <div class="image">
+                                <img src="" id="addImg" alt="">
                             </div>
+                            <div class="content">
+                                <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                                <div class="text">No file chosen, yet!</i></div>
+                            </div>
+                            <div id="cancel_btn"><i class="fas fa-times"></i></div>
+                            <div id="file_name"><i>File name here</i></div>
                         </div>
-                        <div class="few_img">
-                            <!-- <div class="few_items">
+                        <input id="default-btn" type="file" hidden>
+                        <input id="upload_btn" type="file" hidden>
+                        <button onclick="defaultBtnActive()" id="custom-btn" class="custom-btn">Choose a photo</button>
+                        <button onclick="uploadFile()" id="upd_btn" class="upd_btn">Upload</button>
+                        <!-- <div class="few_img">
+                            <div class="few_items">
                                 <img src="img/new.png" alt="">
                                 <img src="img/new.png" alt="">
-                            </div> -->
+                            </div>
                             <img src="img/newMap.png" alt="" class="map">
-                        </div>
+                        </div> -->
                     </div>
                     <div class="form_edit">
                         <div class="form_each_line">
@@ -101,5 +134,61 @@
             </div>t
         </div>
     </section>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+
+        }
+    </script>
+    <script>
+        const first = document.querySelector(".first");
+        const fileName = document.querySelector("#file_name");
+        const cancelBtn = document.querySelector("#cancel_btn");
+        const defaultBtn = document.querySelector("#default-btn");
+        const customBtn = document.querySelector("#custom-btn");
+        const uploadBtn = document.querySelector("#upload_btn");
+        const img = document.querySelector("#addImg");
+        let regExp = /[0-9a-zA-Z\\&\"\@\{\}\[\]\, \$\=\/\-\#\(\)\. \%\+\~\_ ]+$/;
+        function defaultBtnActive(){
+            defaultBtn.click();
+        }
+
+        function uploadFile() {
+            console.log("Файл отправлен!");
+        }
+
+        defaultBtn.addEventListener("change", function(){
+            const file = this.files[0];
+            if(file){
+                const reader = new FileReader();
+                reader.onload = function(){
+                    const result = reader.result;
+                    img.src = result;
+                    first.classList.add("active");
+                }
+                cancelBtn.addEventListener("click", function(){
+                    img.src = "";
+                    first.classList.remove("active");
+                });
+
+                reader.readAsDataURL(file);
+                if(this.value){
+                    let valueStore = this.value.replace(/^.*[\\\/]/, '');;
+                    fileName.textContent = valueStore;
+                }
+            }
+        });
+
+        uploadBtn.addEventListener("click", function() {
+            const file = defaultBtn.files[0];
+            if (file) {
+                uploadFile();
+            } else {
+                console.log("Файл не выбран!");
+            }
+        });
+    </script>
 </body>
 </html>
