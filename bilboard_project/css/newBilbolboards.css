@@ -71,6 +71,7 @@ a {
     text-align: left;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .enter img {
@@ -144,7 +145,86 @@ a {
 }
 
 
-.first_img button {
+.sub-menu {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+.uer-info {
+    display: flex;
+    align-items: center;
+}
+
+.uer-info h3 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.uer-info img {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-wrap {
+    position: absolute;
+    top: 68px;
+    right: 93px;
+    width: 260px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+    max-height: 400px;
+}
+
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.sub-menu-link p {
+    width: 100%;
+    font-size: 16px;
+}
+
+.sub-menu-link i {
+    margin-right: 10px;
+    width: 18px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.sub-menu-link span {
+    font-size: 22px;
+    transition: transform 0.5s;
+
+}
+
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+    font-weight: 600;
+}
+
+
+/* .first_img button {
     position: absolute;
     color: #000;
     background: rgba(145, 145, 145, 0.5);
@@ -156,9 +236,9 @@ a {
     text-align: center;
     border: none;
     font-weight: 800;
-}
+} */
 
-.first_img a {
+/* .first_img a {
     color: #000;
     font-weight: 700;
 }
@@ -170,6 +250,117 @@ a {
 .first_img {
     position: relative;
     margin-bottom: 4px;
+} */
+
+
+.first {
+    position: relative;
+    height: 250px;
+    place-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first .image {
+    position: absolute;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.first .icon {
+    font-size: 100px;
+    color: #A52800;
+}
+
+.first .text {
+    font-size: 20px;
+    color: #A52800;
+    font-weight: 500;
+}
+
+
+.first  #cancel_btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #A52800;
+    display: none;
+}
+
+.first.active:hover #cancel_btn {
+    display: block;
+}
+
+.first #cancel_btn:hover {
+    color:  #D33232;
+}
+
+.first #file_name {
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    padding: 8px 0;
+    width: 100%;
+    font-size: 18px;
+    background: #A52800;
+    display: none;
+}
+
+.first.active:hover #file_name{
+    display: block;
+}
+
+.first.active {
+    border: none;
+}
+
+.edit_img #custom-btn {
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    display: block;
+    border: none;
+    background-color: #D33232;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.edit_img #upd_btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    display: block;
+    border: none;
+    background-color: #D33232;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
 }
 
 .few_items {
@@ -203,6 +394,7 @@ a {
 
 .edit_img {
     margin-right: 70px;
+    width: 350px;
 }
 
 .form_each_line {
@@ -234,4 +426,9 @@ input[type=submit] {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-  }
+}
+
+
+form  {
+    border: #000;
+}
