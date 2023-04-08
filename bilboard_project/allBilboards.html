@@ -35,9 +35,33 @@
             <div class="sidebar_items">
                 <div class="enter">
                     <img src="img/user.png" class="user-pic" onclick="toggleMenu()">
-                    <div class="name">
-                        <p>Cristi Ron</p>
-                        <p>Super Admin</p>
+                </div>
+                <div class="name">
+                    <p>Cristi Ron</p>
+                    <p>Super Admin</p>
+                </div>
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="uer-info">
+                            <img src="img/user.png" class="img2">
+                            <h3>Kozhan Nursylam</h3>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-user"></i>
+                            <p>My profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <p>Edit profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Log out</p>
+                            <span>></span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -175,5 +199,13 @@
             </div>
         </div>
     </section>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+
+        }
+    </script>
 </body>
 </html>
