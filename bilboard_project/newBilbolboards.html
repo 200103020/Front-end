@@ -83,9 +83,9 @@
                             <div id="file_name"><i>File name here</i></div>
                         </div>
                         <input id="default-btn" type="file" hidden>
-                        <input id="upload_btn" type="sybmit" hidden>
+                        <!-- <input id="upload_btn" type="sybmit" hidden> -->
                         <button onclick="defaultBtnActive()" id="custom-btn" class="custom-btn">Choose a photo</button>
-                        <button onclick="uploadFile()" id="upd_btn" class="upd_btn">Upload</button>
+                        <!-- <button onclick="uploadFile()" id="upd_btn" class="upd_btn">Upload</button> -->
                         <!-- <div class="few_img">
                             <div class="few_items">
                                 <img src="img/new.png" alt="">
@@ -128,7 +128,8 @@
                             <label for="Price">Price</label>
                             <input type="text" value="">
                         </div>
-                        <input type="submit" value="Save">
+                        <button type="submit">Save</button>
+                        <!-- <input type="submit" value="Save"> -->
                     </div>
                 </div>
             </div>t
@@ -155,9 +156,9 @@
             defaultBtn.click();
         }
 
-        function uploadFile() {
-            console.log("Файл отправлен!");
-        }
+        // function uploadFile() {
+        //     console.log("Файл отправлен!");
+        // }
 
         defaultBtn.addEventListener("change", function(){
             const file = this.files[0];
@@ -181,14 +182,14 @@
             }
         });
 
-        uploadBtn.addEventListener("click", function() {
-            const file = defaultBtn.files[0];
-            if (file) {
-                uploadFile();
-            } else {
-                console.log("Файл не выбран!");
-            }
-        });
+        // uploadBtn.addEventListener("click", function() {
+        //     const file = defaultBtn.files[0];
+        //     if (file) {
+        //         uploadFile();
+        //     } else {
+        //         console.log("Файл не выбран!");
+        //     }
+        // });
     </script>
 </body>
 </html>
