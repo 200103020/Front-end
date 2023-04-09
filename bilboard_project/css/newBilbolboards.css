@@ -49,6 +49,7 @@ a {
     padding: 20px 0;
     display: flex;
     justify-content: end;
+    position: relative;
 }
 
 .sub-menu {
@@ -177,8 +178,8 @@ a {
 
 .sub-menu-wrap {
     position: absolute;
-    top: 68px;
-    right: 93px;
+    top: 88%;
+    right: -10px;
     width: 260px;
     max-height: 0;
     overflow: hidden;
@@ -390,6 +391,7 @@ a {
 
 .edit_item {
     display: flex;
+    align-items: center;
 }
 
 .edit_img {
@@ -418,6 +420,17 @@ label {
 
 
 input[type=submit] {
+    width: 100%;
+    background-color: #D33232;
+    color: white;
+    padding: 10px 0;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button {
     width: 100%;
     background-color: #D33232;
     color: white;
