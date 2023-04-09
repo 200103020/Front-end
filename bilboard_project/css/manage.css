@@ -71,8 +71,8 @@ a {
 
 .sub-menu-wrap {
     position: absolute;
-    top: 68px;
-    right: 93px;
+    top: 88%;
+    right: -10px;
     width: 260px;
     max-height: 0;
     overflow: hidden;
@@ -81,6 +81,7 @@ a {
 
 .sub-menu-wrap.open-menu {
     max-height: 400px;
+    z-index: 2;
 }
 
 .sub-menu-link {
@@ -118,6 +119,7 @@ a {
 }
 
 
+
 .sidebar {
     background-color: #FFF;
     width: 100%;
@@ -128,6 +130,7 @@ a {
     padding: 20px 0;
     display: flex;
     justify-content: end;
+    position: relative;
 }
 
 .sub-menu {
@@ -284,6 +287,7 @@ a {
 
 .report_item {
     position: relative;
+    z-index: 1;
 }
 
 .red_nav {
@@ -386,5 +390,10 @@ td span {
     cursor: pointer;
 }
 
+
+.info_manager {
+    display: flex;
+    position: relative;
+}
 
 
