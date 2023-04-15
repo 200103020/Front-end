@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/basket.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <title>My Basket</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <h1>Happy Clients</h1>
+                <div class="shops">
+                    <div class="enter">
+                        <img src="img/user.png" class="user-pic" onclick="toggleMenu()">
+                    </div>
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <div class="uer-info">
+                                <img src="img/user.png" class="img2">
+                                <h3>Kozhan Nursylam</h3>
+                            </div>
+                            <hr>
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-user"></i>
+                                <p>My profile</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <p>Edit profile</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <p>Log out</p>
+                                <span>></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Basket</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="basket_info">
+        <div class="container">
+            <div class="basket-items">
+                <div class="btn_link">
+                    <div class="link">
+                        <a href="main.html">Home /</a>
+                        <a href="#">Basket</a>
+                    </div>
+                </div>
+                <h3>My Basket</h3>
+                <button type="button" class="empty">Empty the trash</button>
+                <div class="cards">
+                    <div class="items">
+                        <div class="cards_item">
+                            <div class="image">
+                                <img src="img/bilbo.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="text_item">
+                                    <h3>Localtion:</h3>
+                                    <p>Intersection of Abay-Sain streets</p>
+                                </div>
+                                <div class="text_item">
+                                    <h3>City:</h3>
+                                    <p>Almaty</p>
+                                </div>
+                                <div class="text_item">
+                                    <h3>Type:</h3>
+                                    <p>One-sided</p>
+                                </div>
+                                <div class="text_item">
+                                    <h3>Size:</h3>
+                                    <p>5000х2900 мм</p>
+                                </div>
+                                <div class="text_item">
+                                    <h3>Price:</h3>
+                                    <p>400$(per month)</p>
+                                </div>
+                                <div class="text_item">
+                                    <h3>Lighting:</h3>
+                                    <p>Available</p>
+                                </div>
+                            </div>
+                            <div class="circle">
+                                <div class="id">
+                                    <span>(1)</span>
+                                </div>
+                                <div class="order_circles">
+                                    <div class="order_first">
+                                        <button>1</button>
+                                        <button>2</button>
+                                        <button>3</button>
+                                        <button>4</button>
+                                        <button>5</button>
+                                        <button>6</button>
+                                    </div>
+                                    <div class="order_second">
+                                        <button>7</button>
+                                        <button>8</button>
+                                        <button>9</button>
+                                        <button>10</button>
+                                        <button>11</button>
+                                        <button>12</button>
+                                    </div>
+                                    <div class="cancel">
+                                        <div class="info">
+                                            <div class="id_card">
+                                                <h3>ID:</h3>
+                                                <span>1001</span>
+                                            </div>
+                                            <div class="total">
+                                                <h3>Total amount:</h3>
+                                                <span>1200$</span>
+                                            </div>
+                                        </div>
+                                        <div class="trash">
+                                            <button type="button"><img src="img/trash-can.png" alt="trash"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards_item">
+                            <div class="image">
+                                <img src="img/bilbo.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="text_item">
+                                    <h3>Localtion:</h3>
+                                    <p>Intersection of Abay-Sain streets</p>
+                                </div>
+                                <div class="text_item">
+                                    <h3>City:</h3>
+                                    <p>Almaty</p>
+                                </div>
+                                <div class="text_item">
+                                    <h3>Type:</h3>
+                                    <p>One-sided</p>
+                                </div>
+                                <div class="text_item">
+                                    <h3>Size:</h3>
+                                    <p>5000х2900 мм</p>
+                                </div>
+                                <div class="text_item">
+                                    <h3>Price:</h3>
+                                    <p>400$(per month)</p>
+                                </div>
+                                <div class="text_item">
+                                    <h3>Lighting:</h3>
+                                    <p>Available</p>
+                                </div>
+                            </div>
+                            <div class="circle">
+                                <div class="id">
+                                    <span>(2)</span>
+                                </div>
+                                <div class="order_circles">
+                                    <div class="order_first">
+                                        <button>1</button>
+                                        <button>2</button>
+                                        <button>3</button>
+                                        <button>4</button>
+                                        <button>5</button>
+                                        <button>6</button>
+                                    </div>
+                                    <div class="order_second">
+                                        <button>7</button>
+                                        <button>8</button>
+                                        <button>9</button>
+                                        <button>10</button>
+                                        <button>11</button>
+                                        <button>12</button>
+                                    </div>
+                                    <div class="cancel">
+                                        <div class="info">
+                                            <div class="id_card">
+                                                <h3>ID:</h3>
+                                                <span>1001</span>
+                                            </div>
+                                            <div class="total">
+                                                <h3>Total amount:</h3>
+                                                <span>1200$</span>
+                                            </div>
+                                        </div>
+                                        <div class="trash">
+                                            <button type="button"><img src="img/trash-can.png" alt="trash"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculate">
+                        <h3>Order amount</h3>
+                        <div class="all-product">
+                            <div class="product-info">
+                                <div class="id_card">
+                                    <h3>ID:</h3>
+                                    <span>1001</span>
+                                </div>
+                                <div class="id">
+                                    <span>(1)</span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="id_card">
+                                    <h3>ID:</h3>
+                                    <span>1001</span>
+                                </div>
+                                <div class="id">
+                                    <span>(2)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total">
+                            <h3>Total:</h3>
+                            <span>1200$</span>
+                        </div>
+                        <button type="button" class="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>

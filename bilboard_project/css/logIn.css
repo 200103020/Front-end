@@ -2,7 +2,7 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: url(../img/logIn_back3.png) 0 0 no-repeat;
+    /* background: url(../img/logIn_back3.png) 0 0 no-repeat; */
     background-size: 100%;
 }
 
@@ -146,3 +146,33 @@ button {
 .wrong_password p {
     width: 275px;
 }   
+
+
+/* .back_video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: cover;
+} */
+
+
+.back_video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+.back_video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}

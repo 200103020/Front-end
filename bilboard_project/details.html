@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="css/details.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
-    <title>Bilboard</title>
+    <title>Details</title>
 </head>
 <body>
-    <header class="sidebar">
+    <header class="header">
         <div class="container">
-            <div class="sidebar_items">
-                <h2><span>Happy</span> Clients</h2>
+            <nav class="nav">
+                <h1>Happy Clients</h1>
                 <div class="shops">
                     <div class="enter">
                         <img src="img/user.png" class="user-pic" onclick="toggleMenu()">
@@ -45,46 +45,95 @@
                     <div class="cart">
                         <a href="#">
                             <i class="fa-solid fa-cart-shopping"></i>
-                            <span>Cart</span>
+                            <span>Basket</span>
                         </a>
                     </div>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
-    <section class="bilboards_info">
+    <section class="bilbo_info">
         <div class="container">
-            <div class="nav">
-                <a href="#">Home ></a>
-                <a href="#">Bilboards & Pricing ></a>
-                <a href="#">Details</a>
+            <div class="btn_link">
+                <div class="link">
+                    <a href="main.html">Home /</a>
+                    <a href="#">Billboards & Pricing /</a>
+                    <a href="#">Details</a>
+                </div>
             </div>
-            <div class="banner_photos">
-                <div class="photos_each">
-                    <img src="img/details/banner1.png" alt="">
+            <div class="bilbo_cards">
+                <div class="mapBilbo">
+                    <div class="image">
+                        <img src="img/bilbo.png" alt="">
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d726.6435518261171!2d76.89978050944056!3d43.23938995719873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2skz!4v1681543980564!5m2!1sen!2skz" width="315" height="290" style="border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="photos_each">
-                    <img src="img/details/banner2.png" alt="">
-                </div>
-                <div class="photos_each">
-                    <img src="img/details/banner3.png" alt="">
-                </div>
-                <div class="photos_each">
-                    <img src="img/details/Map_banner.png" alt="">
+                <div class="cards">
+                    <div class="cards_item">
+                        <div class="text">
+                            <div class="text-items">
+                                <div class="text_item">
+                                    <h3>Localtion:</h3>
+                                    <p>Intersection of Abay-Sain streets</p>
+                                </div>
+                                <div class="text_item">
+                                    <h3>City:</h3>
+                                    <p>Almaty</p>
+                                </div>
+                                <div class="text_item">
+                                    <h3>Type:</h3>
+                                    <p>One-sided</p>
+                                </div>
+                                <div class="text_item">
+                                    <h3>Size:</h3>
+                                    <p>5000х2900 мм</p>
+                                </div>
+                                <div class="text_item">
+                                    <h3>Price:</h3>
+                                    <p>400$(per month)</p>
+                                </div>
+                                <div class="text_item">
+                                    <h3>Lighting:</h3>
+                                    <p>Available</p>
+                                </div>
+                            </div>
+                            <div class="id">
+                                <h3>ID:</h3>
+                                <span>1001</span>
+                            </div>
+                        </div>
+                        <p id="justText">Select the required time periods</p>
+                        <div class="order_circles">
+                            <div class="order_first">
+                                <button>1</button>
+                                <button>2</button>
+                                <button>3</button>
+                                <button>4</button>
+                                <button>5</button>
+                                <button>6</button>
+                            </div>
+                            <div class="order_second">
+                                <button>7</button>
+                                <button>8</button>
+                                <button>9</button>
+                                <button>10</button>
+                                <button>11</button>
+                                <button>12</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="toBasket">Add to Basket</button>
                 </div>
             </div>
         </div>
     </section>
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-
     <script>
         let subMenu = document.getElementById("subMenu");
 
         function toggleMenu(){
             subMenu.classList.toggle("open-menu");
-
         }
     </script>
 </body>

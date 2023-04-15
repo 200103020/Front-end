@@ -38,29 +38,34 @@ a {
     margin: 0 auto;
 }
 
-.sidebar {
-    background-color: #FFF;
-    position: fixed;
-    width: 100%;
-    margin-bottom: 20px;
-    z-index: 2;
+.header {
+    padding: 20px 0 40px;
 }
 
-.sidebar_nav {
+.nav {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.shops {
+    display: flex;
     align-items: center;
 }
 
 .enter {
-    margin-right: 10px;
-    cursor: pointer;
+    margin-right: 15px;
 }
 
-.img2 {
-    width: 60px;
-    height: 60px;
+.nav h1 {
+    color: #AC2F07;
+    width: 10%;
+    text-align: center;
+}
+
+.cart {
+    font-weight: 800;
 }
 
 .sub-menu {
@@ -95,8 +100,8 @@ a {
 
 .sub-menu-wrap {
     position: absolute;
-    top: 85%;
-    right: 10%;
+    top: 84%;
+    right: -8px;
     width: 260px;
     max-height: 0;
     overflow: hidden;
@@ -161,34 +166,191 @@ a {
     color: #F4624B;
 }
 
-.shops {
+
+.bilbo {
+    background: #FFF;
+    padding: 20px 0;
+    border-radius: 30px 0px 0px 30px;
+    margin-left: 12px;
+    width: 308px;
+}
+
+.mapBilbo{
+    display: block;
+    width: 323px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+
+.bilbo a {
+    color: #A52800;
+    margin-left: 60px;
+}
+
+.bilbo_cards {
     display: flex;
+    justify-content: center;
+}
+
+.cards {
+    display: block;
+}
+.cards_item {
+    display: block;
+    align-items: center;
+    width: 645px;
+    background-color: #FFF;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 11px;
+    height: 432px;
+}
+
+.image {
+    width: 320px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.text_item:last-child {
+    margin-bottom: 20px;
+}
+
+.text_item h3 {
+    width:  120px;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.text_item h3:nth-child(6n) {
+    margin-bottom: 0;
+}
+.text_item p {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.text_item p:nth-child(6n) {
+    margin-bottom: 0;
+}
+
+.id {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.id h3 {
+    margin-right: 10px;
+}
+
+
+.order_circles button {
+    width: 40px;
+    height: 40px;
+    font-weight: 800;
+    border-radius: 100%;
+    border: none;
+}
+
+
+.order_first button {
+    margin-right: 3px;
+    margin-bottom: 10px;
+    background: #4BD4FF;
+}
+
+.order_first button:nth-child(6n) {
+    margin-right: 0;
+}
+
+.order_second button {
+    margin-right: 3px;
+    background: #FF5959;
+}
+
+.order_second button:nth-child(6n) {
+    margin-right: 0;
+}
+
+.order_second {
+    margin-bottom: 23px;
+}
+.btn {
+    display: flex;
+    justify-content: end;
     align-items: center;
 }
 
-.shops a {
-    color: #000;
-    font-size: 16px;
-    margin-right: 10px;
-    font-weight: 500;
+.btn .detail button{
+    width: 150px;
+    padding: 6px;
+    border-radius: 10px;
+    background: #A52800;
+    color: #FFF;
+    margin-right: 15px;
+    cursor: pointer;
 }
 
-.cart a {
-    font-weight: bold;
-    font-size: 18px;
-    margin-left: 10px;
+.btn .delete button {
+    width: 100px;
+    padding: 6px;
+    border-radius: 10px;
+    background: #525252;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.boxed {
+    display: flex;
 }
 
 
-.bilboards_info {
-    padding: 100px 0;
+.btn_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.nav a {
+
+.link a {
     font-weight: 400;
-    font-size: 20px;
 }
 
-.nav a:nth-child(3n) {
-    font-weight: 800;
+.link a:last-child{
+    font-weight: 600;
+}
+
+#justText{
+    margin-bottom: 10px;
+}
+
+.toBasket{
+    display: block;
+    background: #AC2F07;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px;
+    width: 175px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: none;
 }

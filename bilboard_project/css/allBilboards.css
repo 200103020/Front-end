@@ -217,6 +217,7 @@ a {
 
 .cards_item {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     background-color: #FFF;
@@ -331,4 +332,161 @@ a {
     background: #525252;
     color: #FFF;
     cursor: pointer;
+}
+
+.boxed {
+    display: flex;
+}
+
+/* .boxed label {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: solid 2px #ccc;
+    transition: all 0.3s;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 100px;
+    font-weight: 600;
+    margin-right: 3px;
+}
+
+
+.boxed label:nth-child(6n) {
+    margin-right: 0;
+}
+  
+.boxed input[type="radio"] {
+    display: none;
+}
+  
+.boxed input[type="radio"]:checked + label {
+    background-color: #4BD4FF;
+} */
+
+#myModal {
+    width: 320px;
+    height: 185px;
+    padding: 45px 9px;
+    border-radius: 4px;
+    background: #FFFCDE;
+    font-size: 30px;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 38;
+    text-align: center;
+}
+
+#myModal #myModal__close {
+    width: 21px; height: 21px;
+    position: absolute;
+    font-size: 29px;
+    top: 1px; right: 11px;
+    cursor: pointer;
+    display: block;
+}
+
+#myOverlay {
+    z-index: 37;
+    position: fixed;
+    background: rgba(0,0,0,.7);
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+#myModal h3 {
+    font-size: 22px;
+    padding-bottom: 26px;
+}
+
+#myModal button {
+    width: 130px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #A52800;
+    color: #FFF;
+    margin-right: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#myModal button:nth-child(2n){
+    background: #6b6b6b;
+    margin-right: 0;
+}
+
+.modal_btn {
+    display: flex;
+    justify-content: center;
+}
+
+
+.dropbtn {
+    background: #A52800;
+    color: white;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+  
+  /* .dropbtn:hover, .dropbtn:focus {
+    background-color: #872504;
+  } */
+  
+#myInput {
+box-sizing: border-box;
+background-image: url('searchicon.png');
+background-position: 14px 12px;
+background-repeat: no-repeat;
+font-size: 16px;
+padding: 14px 20px 12px 45px;
+border: none;
+border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+position: relative;
+display: inline-block;
+transition: max-height 0.5s;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+width: 950px;
+overflow: auto;
+border: 1px solid #ddd;
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+  
+.dropdown a:hover {background-color: #ddd;}
+
+.recover {
+margin-left: 250px;
+}
+
+.show {display: block;}
+
+
+.dropdown .cards_item {
+background-color: #b4b4b4;
 }
